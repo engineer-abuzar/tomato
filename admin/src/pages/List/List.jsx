@@ -14,6 +14,7 @@ const List = ({url}) => {
       setList(response.data.data)
     }
     else{
+      console.log(response)
       toast.error("Error")
     }
   }

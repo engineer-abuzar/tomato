@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = process.env.api_address
+  const url = import.meta.env.api_address
   const [token, setToken] = useState("");
 
   //remove food_list state 
